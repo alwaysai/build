@@ -10,7 +10,6 @@ const FILE_NAME = 'alwaysai.git.json';
 const codec = t.type({
   directory: t.string,
   commitHash: t.string,
-  comment: t.string,
   diff: t.string,
 });
 
@@ -24,7 +23,7 @@ export function GitInfoFile(dir: string) {
     codec,
   });
 
-  function write(comment = '') {
+  function write() {
     if (!existsSync(join(dir, '.git'))) {
       throw new Error(`"${dir}" is not a git repository`);
     }
@@ -34,7 +33,6 @@ export function GitInfoFile(dir: string) {
       directory: dir,
       commitHash: git('rev-parse', HEAD),
       diff: git('diff', HEAD),
-      comment,
     });
   }
   return { ...configFile, write };

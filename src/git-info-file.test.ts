@@ -17,12 +17,10 @@ const subject = GitInfoFile(dir);
 
 describe(GitInfoFile.name, () => {
   it('Writes git information to the specified directory', () => {
-    const comment = 'A comment';
-    subject.write(comment);
+    subject.write();
     const info = subject.read();
     const commitHash = git('rev-parse', 'HEAD');
     const expectedInfo: typeof info = {
-      comment,
       commitHash,
       diff: `diff --git a/bar.foo b/bar.foo
 new file mode 100644
