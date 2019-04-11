@@ -1,7 +1,7 @@
 {
   "name": "@alwaysai/build",
   "description": "A Node.js library of build tools for alwaysAI projects",
-  "version": "0.0.0-0",
+  "version": "0.0.0-1",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "engines": {
