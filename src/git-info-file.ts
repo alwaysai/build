@@ -1,8 +1,10 @@
 import { existsSync } from 'fs';
 import { join } from 'path';
 
+import * as t from 'io-ts';
+
 import { ConfigFile } from '@alwaysai/config-nodejs';
-import * as t from '@alwaysai/codecs';
+
 import { createGit } from './create-git';
 
 const FILE_NAME = 'alwaysai.git.json';
