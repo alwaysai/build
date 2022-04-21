@@ -1,6 +1,6 @@
 # @alwaysai/build [![npm version](https://badge.fury.io/js/%40carnesen%2Fbitcoin-rpc.svg)](https://badge.fury.io/js/%40carnesen%2Fbitcoin-rpc) [![Build Status](https://travis-ci.com/alwaysai/build.svg?branch=master)](https://travis-ci.com/alwaysai/build)
 
-This package includes runtime JavaScript files suitable for Node.js >=8 as well as the corresponding TypeScript type declarations. This software should be considered a "pre-alpha" release.
+This package includes runtime JavaScript files suitable for Node.js >=16 as well as the corresponding TypeScript type declarations. This software should be considered a "pre-alpha" release.
 
 ## Usage
 ## More information
